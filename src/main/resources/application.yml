@@ -33,6 +33,17 @@ spring:
 
 #TODO: change servlet log level to view the logs
 
+  sleuth:
+    sampler:
+      probability: 1.0
+
+  zipkin:
+    base-url: http://zipkin.team-e.cloud.school.thoughtworks.cn
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+
 springfox:
   documentation:
     swagger:
