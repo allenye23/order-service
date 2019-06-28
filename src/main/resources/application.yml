@@ -40,7 +40,7 @@ spring:
           content-type: application/json
 
   rabbitmq:
-    host: localhost
+    host: http://rabbitmq.team-e.cloud.school.thoughtworks.cn
     port: 5672
     username: guest
     password: guest
