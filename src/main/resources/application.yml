@@ -31,6 +31,20 @@ spring:
 
 # TODO: config stream bindings
 
+  cloud:
+    stream:
+      bindings:
+        outputOrder:
+          destination: order
+          group: default
+          content-type: application/json
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 # TODO: config rabbitmq
 
 logging:
